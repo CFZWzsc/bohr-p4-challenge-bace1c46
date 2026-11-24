@@ -77,6 +77,18 @@ description: Use when a review task needs risk-of-bias or methodological quality
 - 不输出单一数值质量分，避免伪精确；跨研究比较应基于逐域判断。
 - 本 Skill 是决策支持，不构成正式偏倚风险裁定。
 
+## Quickstart
+
+在仓库根目录 `bohrium-competition` 执行（PowerShell，实测通过）：
+
+```powershell
+python -B "tracks\literature-search\challenges\challenge-bace1c46\06_code\submission\scripts\run_skill.py" --case "tracks\literature-search\challenges\challenge-bace1c46\06_code\submission\examples\demo-case\case.json" --out "$env:TEMP\demo_bace1c46\result.json" --work "$env:TEMP\demo_bace1c46\work"
+```
+
+- 示例输入：`examples/demo-case/case.json`，合成且自包含（`"demo": true`，2 项研究：一项 RCT、一项前瞻性队列，各带 `sections.methods/results`；DOI 均为虚构的 `10.0000/...`）。
+- 实测输出：`status = "success"`、`studies = 2`，`result.json` 顶层含 `case_id`、`status`、`result`、`appraisals`、`evidence`、`uncertainty`、`errors`、`stats`；同一输入两次运行结果逐字节一致。
+- 该用例只验证脚本可执行与输出契约齐全，偏倚判断只反映所给文本的报告完整度。
+
 ## 最小调用示例（示例，非正式案例结果）
 
 ```bash
