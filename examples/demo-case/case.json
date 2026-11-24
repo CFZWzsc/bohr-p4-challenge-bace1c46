@@ -1,0 +1,43 @@
+{
+  "demo": true,
+  "synthetic": true,
+  "case_id": "demo-bace1c46-nlrp3-saki",
+  "note": "Synthetic, self-contained demo case. Studies, DOIs (10.0000/...) and reported methods are fabricated for testing only.",
+  "topic": "Risk-of-bias appraisal of studies on NLRP3 inhibition in septic acute kidney injury",
+  "studies": [
+    {
+      "study_id": "st1",
+      "title": "NLRP3 inhibition in septic acute kidney injury: a randomised controlled trial",
+      "doi": "10.0000/demo.q1",
+      "year": 2022,
+      "design": "randomized controlled trial",
+      "abstract": "We randomised 180 patients with septic acute kidney injury to an NLRP3 inhibitor or placebo and measured renal recovery at 28 days.",
+      "sections": {
+        "methods": "Randomised, double-blind, placebo-controlled trial. A computer-generated random sequence with allocation concealment was used. Outcome assessors were blinded. The trial was pre-registered and all pre-specified outcomes are reported. Complete outcome data were available.",
+        "results": "NLRP3 inhibition reduced the composite renal outcome; adverse events were similar between groups."
+      }
+    },
+    {
+      "study_id": "st2",
+      "title": "Urinary NLRP3 and renal recovery in septic acute kidney injury: a prospective cohort study",
+      "doi": "10.0000/demo.q2",
+      "year": 2020,
+      "design": "cohort",
+      "abstract": "In 96 patients with sepsis we measured urinary NLRP3 at admission and followed renal recovery for 90 days.",
+      "sections": {
+        "methods": "Prospective single-centre cohort. Urinary NLRP3 was measured with a standardised assay. Analyses were adjusted for confounders including age, SOFA score and baseline creatinine. Some missing data were handled by multiple imputation. Outcome assessment was not blinded.",
+        "results": "Higher urinary NLRP3 was associated with slower renal recovery."
+      }
+    }
+  ],
+  "output_contract": {
+    "case_id": "string",
+    "status": "string",
+    "result": "object",
+    "appraisals": "array",
+    "evidence": "array",
+    "uncertainty": "array",
+    "errors": "array",
+    "stats": "object"
+  }
+}
