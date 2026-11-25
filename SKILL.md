@@ -5,6 +5,8 @@ description: Use when a review task needs risk-of-bias or methodological quality
 
 # 研究方法质量与偏倚风险评价
 
+
+
 ## 用途与适用条件
 
 当任务要求对纳入研究做方法学质量/偏倚风险评价，并且必须逐域说明判断依据、定位到原文句子、区分"低风险"与"未报告"时使用。适用于系统综述的质量评价阶段、证据强度分级前的准备与稿件方法学自查。
